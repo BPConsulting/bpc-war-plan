@@ -2,11 +2,11 @@
   "project": "INTRIX War Plan",
   "last_updated": "2026-04-17",
   "tasks": [
-    {"id": 1,  "task": "INTRIX data cleanup session with TNC — production employee data", "client": "ITO+ITR", "type": "config",  "deadline": "13/4", "status": "Pending"},
-    {"id": 2,  "task": "Run copy_prod_to_staging.py once production data is clean",        "client": "ITO+ITR", "type": "config",  "deadline": "13/4", "status": "Pending"},
+    {"id": 1,  "task": "INTRIX data cleanup session with TNC — production employee data", "client": "ITO+ITR", "type": "config",  "deadline": "13/4", "status": "Done"},
+    {"id": 2,  "task": "Run copy_prod_to_staging.py once production data is clean",        "client": "ITO+ITR", "type": "config",  "deadline": "13/4", "status": "Done"},
     {"id": 3,  "task": "First test payslip Jan 2026 — validate vs source Excel",           "client": "ITO+ITR", "type": "dev",     "deadline": "13/4", "status": "Pending"},
     {"id": 4,  "task": "ESS onboarding plan — batches (~20/day), criteria, order",         "client": "ITO+ITR", "type": "admin",   "deadline": "13/4", "status": "Done"},
-    {"id": 5,  "task": "Townhall talking points + ESS demo flow outline",                  "client": "ITO+ITR", "type": "content", "deadline": "13/4", "status": "Pending"},
+    {"id": 5,  "task": "Townhall talking points + ESS demo flow outline",                  "client": "ITO+ITR", "type": "content", "deadline": "13/4", "status": "Done"},
     {"id": 6,  "task": "AVP dual CRM/Sales — design decision (own vs managed-on-behalf)",  "client": "AVP",     "type": "design",  "deadline": "14/4", "status": "Pending"},
     {"id": 7,  "task": "ESS feature visibility controls — hide leave+payslips for launch", "client": "ITO+ITR", "type": "dev",     "deadline": "14/4", "status": "Pending"},
     {"id": 8,  "task": "Dealer portal desktop redesign",                                   "client": "ITO",     "type": "dev",     "deadline": "14/4", "status": "Pending"},
@@ -48,6 +48,7 @@
     {"id": 44, "task": "Race seed data on production (CHI/MLY/IND/OTH)",                  "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
     {"id": 45, "task": "PCB_EXTRA as separate salary rule",                                "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
     {"id": 46, "task": "Validate Feb+Mar payslips — ITO0007 and ITO0019 YTD",             "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 47, "task": "bpc-war-plan repo setup — war-plan.json, RULES.md, MODULES.md",   "client": "BPC",     "type": "admin",   "deadline": "17/4", "status": "Done"}
+    {"id": 47, "task": "bpc-war-plan repo setup — war-plan.json, RULES.md, MODULES.md",   "client": "BPC",     "type": "admin",   "deadline": "17/4", "status": "Done"},
+    {"id": 48, "task": "Install and configure payroll on production (ITO+ITR structures)", "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"}
   ]
 }
