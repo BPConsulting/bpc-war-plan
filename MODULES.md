@@ -182,3 +182,46 @@ Multiple same-tier packages allowed per dealer.
 - Race seed data on production (CHI/MLY/IND/OTH) — `bpc19_intrix_data_certification`
 - PCB_EXTRA as separate salary rule — `bpc19_intrix_payroll`
 - Feb+Mar payslip validation for ITO0007 and ITO0019
+---
+
+## New payroll fields added 20 Apr 2026 (LHDN 2026 compliance)
+
+### hr.employee — Tax Profile (PCB)
+| Field | Odoo field name | Type | Default |
+|-------|----------------|------|---------|
+| PCB Category | `pcb_category` | Selection 1/2/3 | '1' |
+| Tax Resident | `is_resident` | Boolean | True |
+| Tax Region | `tax_region` | Selection peninsular/east | 'peninsular' |
+| Spouse Disabled | `spouse_disabled` | Boolean | False |
+| Zakat Monthly | `zakat_monthly` | Float | 0.0 |
+| Disabled Children (studying) | `pcb_children_disabled_studying` | Integer | 0 |
+| TP3 Taxable Gross | `tp3_taxable_gross` | Float | 0.0 |
+| TP3 EPF Paid | `tp3_epf_paid` | Float | 0.0 |
+| TP3 PCB Paid | `tp3_pcb_paid` | Float | 0.0 |
+| TP3 Zakat Paid | `tp3_zakat_paid` | Float | 0.0 |
+| TP3 Deductions | `tp3_deductions` | Float | 0.0 |
+
+### hr.statutory.pcb — LHDN Table 1 B values
+| Field | Odoo field name | Type |
+|-------|----------------|------|
+| B (Cat 1 & 3) | `b_cat1_3` | Float |
+| B (Cat 2) | `b_cat2` | Float |
+
+### bpc.employee.tp1.claim — TP1 Deduction Claims
+| Field | Odoo field name | Type |
+|-------|----------------|------|
+| Employee | `employee_id` | Many2one hr.employee |
+| Year | `year` | Integer |
+| Month | `month` | Integer |
+| Category | `category` | Selection C1-C17 |
+| Amount | `amount` | Float |
+| Approved | `approved` | Boolean |
+
+### Payroll engine methods (payroll_helpers.py)
+| Method | Purpose |
+|--------|---------|
+| `bpc_pcb()` | LHDN 2026 normal remuneration — complete rewrite |
+| `bpc_pcb_additional()` | LHDN 2026 bonus 5-step formula — NEW |
+| `_bpc_pcb_bracket_lookup()` | Table 1 M/R/B lookup by P and category — NEW |
+| `_bpc_tp1_sum_lp()` | TP1 accumulated deductions prior months — NEW |
+| `_bpc_tp1_lp1()` | TP1 deductions current month — NEW |
