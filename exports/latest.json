@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-04-20T20:27:45+08:00",
+  "pulled_at": "2026-04-20T22:21:36+08:00",
   "machine": "FCS-StudioBerry",
   "uid": 2,
   "stage_map": {
@@ -9,11 +9,11 @@
     "Next Week": 4,
     "Later": 5
   },
-  "task_count": 53,
+  "task_count": 44,
   "tasks": [
     {
       "id": 427,
-      "name": "ITO+ITR / Validate Mar 2026 PCB \u2014 ITO0007 + ITO0019",
+      "name": "TNC / Validate Mar 2026 PCB \u2014 ITO0007 + ITO0019",
       "description": "<p>Jan and Feb validated against LHDN. Expected: 16.70 for ITO0007 (RM 4000 Cat 1) and 207.50 for ITO0019 (RM 6000 single). Closes Step 1.</p>",
       "project_id": false,
       "stage_id": false,
@@ -25,7 +25,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -36,40 +36,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:35",
-      "create_date": "2026-04-20 06:45:35"
-    },
-    {
-      "id": 428,
-      "name": "ITO+ITR / Merge develop \u2192 main + Cloudpepper production update (post-Mar)",
-      "description": "<p>Once Mar validates: merge develop \u2192 main, then Cloudpepper production update + upgrade bpc19_intrix_payroll.</p>",
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        2
-      ],
-      "personal_stage_type_id": [
-        2,
-        "Today"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-22 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 06:45:35",
+      "write_date": "2026-04-20 14:16:23",
       "create_date": "2026-04-20 06:45:35"
     },
     {
       "id": 429,
-      "name": "ITO+ITR / Step 2 \u2014 hr.employee tax profile extension",
+      "name": "TNC / Step 2 \u2014 hr.employee tax profile extension",
       "description": "<p>Fields: pcb_category, spouse_disabled, zakat_monthly, tax_region, TP3 x4 (prior-employer YTD), TP1 x16 + computed total. Add 'Tax Profile (PCB)' notebook page on hr.employee form.</p>",
       "project_id": false,
       "stage_id": false,
@@ -81,7 +53,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -92,12 +64,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:35",
+      "write_date": "2026-04-20 14:17:41",
       "create_date": "2026-04-20 06:45:35"
     },
     {
       "id": 430,
-      "name": "ITO+ITR / Rewrite bpc_pcb() per full LHDN spec",
+      "name": "TNC / Rewrite bpc_pcb() per full LHDN spec",
       "description": "<p>Cat 1/2/3 B values. Formula: D+S+DU+SU+QC+sum(LP)+LP1. K2 projection with K1 floor. Z (zakat) subtraction. RM 400 rebate when chargeable &lt;= RM 35,000. Retain YTD reconciliation.</p>",
       "project_id": false,
       "stage_id": false,
@@ -109,7 +81,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -120,12 +92,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:35",
+      "write_date": "2026-04-20 14:17:51",
       "create_date": "2026-04-20 06:45:35"
     },
     {
       "id": 431,
-      "name": "ITO+ITR / Import script \u2014 Tax Category / Zakat / Handicapped / TP3 from Dec 2025 Intrix export",
+      "name": "TNC / Import script \u2014 Tax Category / Zakat / Handicapped / TP3 from Dec 2025 Intrix export",
       "description": "<p>One-shot Python script to populate hr.employee tax profile fields from the Dec 2025 Intrix export file.</p>",
       "project_id": false,
       "stage_id": false,
@@ -137,7 +109,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -148,12 +120,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:35",
+      "write_date": "2026-04-20 14:17:47",
       "create_date": "2026-04-20 06:45:35"
     },
     {
       "id": 432,
-      "name": "ITO+ITR / PCB_EXTRA as separate salary rule (Option A)",
+      "name": "TNC / PCB_EXTRA as separate salary rule (Option A)",
       "description": "<p>Voluntary top-up isolation. PCB rule only sums statutory PCB in YTD lookup; PCB_EXTRA reads emp.pcb_extra directly. Prevents voluntary top-ups from corrupting statutory PCB YTD.</p>",
       "project_id": false,
       "stage_id": false,
@@ -165,7 +137,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -176,12 +148,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:36",
+      "write_date": "2026-04-20 14:17:55",
       "create_date": "2026-04-20 06:45:36"
     },
     {
       "id": 433,
-      "name": "ITO+ITR / Race seed data on production (CHI / MLY / IND / OTH)",
+      "name": "TNC / Race seed data on production (CHI / MLY / IND / OTH)",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -193,7 +165,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -204,96 +176,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:36",
-      "create_date": "2026-04-20 06:45:36"
-    },
-    {
-      "id": 434,
-      "name": "ITO+ITR / Personal data confirmation form (WhatsApp token + single-shot + TNC approval)",
-      "description": "<p>Announced at the townhall. Unique token per employee. Form shows current values, accepts updates, one-time submission. Changes go to TNC approval queue before writing to the DB.</p>",
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        2
-      ],
-      "personal_stage_type_id": [
-        2,
-        "Today"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-22 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 06:45:36",
-      "create_date": "2026-04-20 06:45:36"
-    },
-    {
-      "id": 435,
-      "name": "ITO+ITR / Zoom attendance \u2014 run setup_townhall_events.py on production",
-      "description": "<p>Creates 4 event.event records with 87 pre-registered employees across the townhall sessions.</p>",
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        2
-      ],
-      "personal_stage_type_id": [
-        2,
-        "Today"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-21 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 06:45:36",
-      "create_date": "2026-04-20 06:45:36"
-    },
-    {
-      "id": 436,
-      "name": "ITO+ITR / Zoom attendance CSV imports \u2014 after 21 / 22 (x2) / 24 April sessions",
-      "description": "<p>After each session: download Zoom Participants CSV and run import_zoom_attendance.py to mark registrations as Attended.</p>",
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        2
-      ],
-      "personal_stage_type_id": [
-        2,
-        "Today"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-24 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 06:45:36",
+      "write_date": "2026-04-20 14:17:28",
       "create_date": "2026-04-20 06:45:36"
     },
     {
       "id": 437,
-      "name": "ITO+ITR / TNC data cleanup \u2014 production employee data",
+      "name": "TNC / TNC data cleanup \u2014 production employee data",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -305,7 +193,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -316,12 +204,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:36",
+      "write_date": "2026-04-20 14:16:04",
       "create_date": "2026-04-20 06:45:36"
     },
     {
       "id": 438,
-      "name": "ITO+ITR / Run copy_prod_to_staging.py once production data is clean",
+      "name": "INTRIX / Run copy_prod_to_staging.py once production data is clean",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -333,7 +221,7 @@
         "Today"
       ],
       "tag_ids": [
-        20
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -344,7 +232,7 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:36",
+      "write_date": "2026-04-20 14:17:17",
       "create_date": "2026-04-20 06:45:36"
     },
     {
@@ -377,7 +265,7 @@
     },
     {
       "id": 466,
-      "name": "BPC / Module renames (fix uppercase) \u2014 all 18 BPC modules",
+      "name": "INTRIX / Module renames (fix uppercase) \u2014 all 18 modules",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -389,7 +277,7 @@
         "Next Week"
       ],
       "tag_ids": [
-        23
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -400,12 +288,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:39",
+      "write_date": "2026-04-20 14:20:12",
       "create_date": "2026-04-20 06:45:39"
     },
     {
       "id": 468,
-      "name": "ITO / HubSpot data import",
+      "name": "INTRIX / HubSpot data import",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -417,7 +305,7 @@
         "Next Week"
       ],
       "tag_ids": [
-        22
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -428,12 +316,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:39",
+      "write_date": "2026-04-20 14:20:27",
       "create_date": "2026-04-20 06:45:39"
     },
     {
       "id": 469,
-      "name": "ITO / Test import of Slack conversations",
+      "name": "INTRIX / Test import of Slack conversations",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -445,7 +333,7 @@
         "Next Week"
       ],
       "tag_ids": [
-        22
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -456,7 +344,7 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:39",
+      "write_date": "2026-04-20 14:20:24",
       "create_date": "2026-04-20 06:45:39"
     },
     {
@@ -516,36 +404,8 @@
       "create_date": "2026-04-20 06:45:40"
     },
     {
-      "id": 472,
-      "name": "ITO+ITR / Avatar fallback (SVG white-on-white \u2014 cosmetic)",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        5
-      ],
-      "personal_stage_type_id": [
-        5,
-        "Later"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": false,
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 06:45:40",
-      "create_date": "2026-04-20 06:45:40"
-    },
-    {
       "id": 473,
-      "name": "ITO+ITR / Medical/hospitalization leave escalation window per leave type",
+      "name": "TNC / Medical/hospitalization leave escalation window per leave type",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -557,7 +417,7 @@
         "Later"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -568,12 +428,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:40",
+      "write_date": "2026-04-20 14:21:12",
       "create_date": "2026-04-20 06:45:40"
     },
     {
       "id": 474,
-      "name": "ITO+ITR / Retroactive leave (allow Medical, block Annual)",
+      "name": "TNC / Retroactive leave (allow Medical, block Annual)",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -585,7 +445,7 @@
         "Later"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -596,12 +456,12 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:40",
+      "write_date": "2026-04-20 14:21:06",
       "create_date": "2026-04-20 06:45:40"
     },
     {
       "id": 475,
-      "name": "ITO+ITR / GPS ghost records (0-second attendances) prevention / auto-delete",
+      "name": "TNC / GPS ghost records (0-second attendances) prevention / auto-delete",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -613,7 +473,7 @@
         "Later"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -624,35 +484,7 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:40",
-      "create_date": "2026-04-20 06:45:40"
-    },
-    {
-      "id": 476,
-      "name": "ITO+ITR / Video handbook",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        5
-      ],
-      "personal_stage_type_id": [
-        5,
-        "Later"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": false,
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 06:45:40",
+      "write_date": "2026-04-20 14:21:01",
       "create_date": "2026-04-20 06:45:40"
     },
     {
@@ -685,7 +517,7 @@
     },
     {
       "id": 478,
-      "name": "ITO+ITR / Orgchart",
+      "name": "TNC / Orgchart",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -697,7 +529,7 @@
         "Later"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -708,7 +540,7 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 06:45:40",
+      "write_date": "2026-04-20 14:20:49",
       "create_date": "2026-04-20 06:45:40"
     },
     {
@@ -797,7 +629,7 @@
     },
     {
       "id": 490,
-      "name": "ITO+ITR / ir.model.access hotfix 1393 \u2014 fold into bpc19_intrix_permissions, delete rule",
+      "name": "TNC / ir.model.access hotfix 1393 \u2014 fold into bpc19_intrix_permissions, delete rule",
       "description": "<div data-oe-version=\"2.0\" data-last-history-steps=\",4013825460820257,2126837338850259\">See INTRIX_ESS_Signup_Forbidden_Fix_20260420.md. Add public-read row for website model to bpc19_intrix_permissions/security/ir.model.access.csv, commit + deploy, then remove database rule id 1393.</div>",
       "project_id": false,
       "stage_id": false,
@@ -809,8 +641,7 @@
         "Later"
       ],
       "tag_ids": [
-        2,
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -821,7 +652,7 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-20 09:47:23",
+      "write_date": "2026-04-20 14:20:41",
       "create_date": "2026-04-20 09:47:23"
     },
     {
@@ -882,7 +713,7 @@
     },
     {
       "id": 446,
-      "name": "ITO+ITR / boolean_toggle fix \u2014 sweep all views",
+      "name": "INTRIX / boolean_toggle fix \u2014 sweep all views",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -894,7 +725,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -905,12 +736,12 @@
         2
       ],
       "sequence": 12,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:18:15",
       "create_date": "2026-04-20 06:45:37"
     },
     {
       "id": 445,
-      "name": "ITO+ITR / ESS \u2014 attendance + WIO only visible at launch",
+      "name": "TNC / ESS \u2014 attendance + WIO only visible at launch",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -922,7 +753,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -933,12 +764,12 @@
         2
       ],
       "sequence": 13,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:18:21",
       "create_date": "2026-04-20 06:45:37"
     },
     {
       "id": 467,
-      "name": "ITO+ITR / Dealer flow reorganization (multi-company)",
+      "name": "ITO / ITO Dealer flow reorganization (multi-company)",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -950,7 +781,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        22
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -961,12 +792,12 @@
         2
       ],
       "sequence": 14,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:18:33",
       "create_date": "2026-04-20 06:45:39"
     },
     {
       "id": 444,
-      "name": "ITO+ITR / ESS feature visibility controls \u2014 hide leave+payslips for launch",
+      "name": "TNC / ESS feature visibility controls \u2014 hide leave+payslips for launch",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -978,7 +809,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -989,12 +820,12 @@
         2
       ],
       "sequence": 15,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:18:39",
       "create_date": "2026-04-20 06:45:37"
     },
     {
       "id": 448,
-      "name": "ITO+ITR / TNC resigned-employee offboarding checklist",
+      "name": "TNC / TNC resigned-employee offboarding checklist",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1006,7 +837,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1017,12 +848,12 @@
         2
       ],
       "sequence": 16,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:18:43",
       "create_date": "2026-04-20 06:45:37"
     },
     {
       "id": 447,
-      "name": "ITO+ITR / TNC new-employee onboarding checklist",
+      "name": "TNC / TNC new-employee onboarding checklist",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1034,7 +865,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1045,64 +876,8 @@
         2
       ],
       "sequence": 17,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:18:46",
       "create_date": "2026-04-20 06:45:37"
-    },
-    {
-      "id": 455,
-      "name": "ITO+ITR / Helpdesk \u2014 ESS ticket creation from portal",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        3
-      ],
-      "personal_stage_type_id": [
-        3,
-        "This Week"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-30 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 19,
-      "write_date": "2026-04-20 10:42:51",
-      "create_date": "2026-04-20 06:45:38"
-    },
-    {
-      "id": 454,
-      "name": "ITO+ITR / Helpdesk queues setup",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        3
-      ],
-      "personal_stage_type_id": [
-        3,
-        "This Week"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-30 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 20,
-      "write_date": "2026-04-20 10:42:51",
-      "create_date": "2026-04-20 06:45:38"
     },
     {
       "id": 453,
@@ -1190,7 +965,7 @@
     },
     {
       "id": 439,
-      "name": "ITO+ITR / Payroll trial runs Jan/Feb/Mar 2026 \u2014 validate all figures",
+      "name": "TNC / Payroll trial runs Jan/Feb/Mar 2026 \u2014 validate all figures",
       "description": "<p>After Step 2 lands and Odoo PCB matches Intrix 170.85 for ITO0019 (Cat 2 married, non-working spouse), run full trial for all employees across EPF / SOCSO / EIS / PCB / net pay.</p>",
       "project_id": false,
       "stage_id": false,
@@ -1202,7 +977,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1213,12 +988,12 @@
         2
       ],
       "sequence": 24,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:18:57",
       "create_date": "2026-04-20 06:45:36"
     },
     {
       "id": 461,
-      "name": "ITO+ITR / Editable WhatsApp / email message templates",
+      "name": "INTRIX / Editable WhatsApp / email message templates",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1230,7 +1005,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1241,12 +1016,12 @@
         2
       ],
       "sequence": 25,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:13",
       "create_date": "2026-04-20 06:45:39"
     },
     {
       "id": 460,
-      "name": "ITO+ITR / Per-employee comms preferences",
+      "name": "INTRIX / Per-employee comms preferences",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1258,7 +1033,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1269,12 +1044,12 @@
         2
       ],
       "sequence": 26,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:27",
       "create_date": "2026-04-20 06:45:39"
     },
     {
       "id": 459,
-      "name": "ITO+ITR / Leave flow ESS",
+      "name": "TNC / Leave flow ESS",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1286,7 +1061,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1297,12 +1072,12 @@
         2
       ],
       "sequence": 27,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:33",
       "create_date": "2026-04-20 06:45:38"
     },
     {
       "id": 458,
-      "name": "ITO+ITR / OT request flow \u2014 advance approval + orgchart + auto cash vs leave",
+      "name": "TNC / OT request flow \u2014 advance approval + orgchart + auto cash vs leave",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1314,7 +1089,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1325,40 +1100,12 @@
         2
       ],
       "sequence": 28,
-      "write_date": "2026-04-20 10:42:51",
-      "create_date": "2026-04-20 06:45:38"
-    },
-    {
-      "id": 457,
-      "name": "ITO+ITR / Auto clock-out hours subtraction fix",
-      "description": "<p>Auto clock-out should subtract already-worked hours that day before adding standard_hours. E.g. if employee already worked 3:06, auto checkout = last_checkin + (9:00 - 3:06).</p>",
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        3
-      ],
-      "personal_stage_type_id": [
-        3,
-        "This Week"
-      ],
-      "tag_ids": [
-        20
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-05-04 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 29,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:37",
       "create_date": "2026-04-20 06:45:38"
     },
     {
       "id": 456,
-      "name": "ITO+ITR / GPS double clock-in entry glitch fix",
+      "name": "TNC / GPS double clock-in entry glitch fix",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1370,7 +1117,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1381,12 +1128,12 @@
         2
       ],
       "sequence": 30,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:41",
       "create_date": "2026-04-20 06:45:38"
     },
     {
       "id": 443,
-      "name": "ITO+ITR / TNC payroll + employee dump reports",
+      "name": "TNC / TNC payroll + employee dump reports",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1398,7 +1145,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1409,12 +1156,12 @@
         2
       ],
       "sequence": 31,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:48",
       "create_date": "2026-04-20 06:45:37"
     },
     {
       "id": 442,
-      "name": "ITO+ITR / PBB payment file export",
+      "name": "TNC / PBB payment file export",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1426,7 +1173,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1437,12 +1184,12 @@
         2
       ],
       "sequence": 32,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:52",
       "create_date": "2026-04-20 06:45:37"
     },
     {
       "id": 441,
-      "name": "ITO+ITR / EPF / SOCSO / EIS / LHDN contribution file exports",
+      "name": "TNC / EPF / SOCSO / EIS / LHDN contribution file exports",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1454,7 +1201,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1465,12 +1212,12 @@
         2
       ],
       "sequence": 33,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:19:57",
       "create_date": "2026-04-20 06:45:37"
     },
     {
       "id": 440,
-      "name": "ITO+ITR / Payslip print template design",
+      "name": "TNC / Payslip print template design",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -1482,7 +1229,7 @@
         "This Week"
       ],
       "tag_ids": [
-        20
+        2
       ],
       "priority": "0",
       "state": "01_in_progress",
@@ -1493,7 +1240,7 @@
         2
       ],
       "sequence": 34,
-      "write_date": "2026-04-20 10:42:51",
+      "write_date": "2026-04-20 14:20:00",
       "create_date": "2026-04-20 06:45:36"
     }
   ],
@@ -1642,6 +1389,11 @@
       "id": 23,
       "name": "BPC",
       "color": 11
+    },
+    {
+      "id": 27,
+      "name": "INTRIX",
+      "color": 10
     },
     {
       "id": 22,
