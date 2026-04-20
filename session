@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+# session — BPC War Room session + Odoo sync CLI
+# Runs identically on MacBook and Studio. Paired with git-tracked scripts
+# at ~/Projects/bpc-war-plan/scripts/
+
+set -e
+
+REPO_DIR="$HOME/Projects/bpc-war-plan"
+SCRIPTS_DIR="$REPO_DIR/scripts"
+
+if [ ! -d "$REPO_DIR" ]; then
+  echo "ERROR: Repo not found at $REPO_DIR"
+  echo ""
+  echo "On MacBook it's already there. On Studio, clone it first:"
+  echo "  cd ~/Projects && git clone git@github.com:BPConsulting/bpc-war-plan.git"
+  exit 1
+fi
+
+if [ ! -f "$SCRIPTS_DIR/session.py" ]; then
+  echo "ERROR: scripts/ missing or stale. Run: cd $REPO_DIR && git pull"
+  exit 1
+fi
+
+case "${1:-help}" in
+
+  setup)
+    python3 "$SCRIPTS_DIR/setup.py" "${@:2}"
+    ;;
+
+  open)
+    python3 "$SCRIPTS_DIR/session.py" open
+    ;;
+
+  close)
+    python3 "$SCRIPTS_DIR/session.py" close
+    ;;
+
+  pull)
+    python3 "$SCRIPTS_DIR/session.py" pull
+    ;;
+
+  seed)
+    python3 "$SCRIPTS_DIR/seed.py" "${@:2}"
+    ;;
+
+  status)
+    cd "$REPO_DIR"
+    echo "Machine: $(hostname -s)"
+    echo "Repo:    $REPO_DIR"
+    echo "Branch:  $(git rev-parse --abbrev-ref HEAD)"
+    echo "HEAD:    $(git log -1 --format='%h %s (%ar)')"
+    echo ""
+    echo "Last 3 session events:"
+    if [ -f "$REPO_DIR/exports/sessions.log" ]; then
+      tail -n 3 "$REPO_DIR/exports/sessions.log"
+    else
+      echo "  (no session log yet)"
+    fi
+    ;;
+
+  help|--help|-h|"")
+    cat <<EOF
+session — BPC War Room CLI
+
+Usage:
+  session setup         First-time setup on this machine
+                        (Keychain password + config check + test connection)
+
+  session open          Start a work session
+                        (git pull + Odoo pull + log OPEN)
+
+  session close         End a work session
+                        (Odoo pull + log CLOSE + git commit + push)
+
+  session pull          Snapshot Odoo tasks to exports/latest.json (no git)
+
+  session seed          Destructive reseed of Odoo To-do
+                        (marks 5 tasks Done, wipes the rest, creates merged set)
+
+  session status        Show machine, repo state, recent sessions
+  session help          This help
+
+Typical day:
+  session open          # morning or when switching machine
+  ... work ...
+  session close         # before stopping or switching machine
+
+Files:
+  ~/Projects/bpc-war-plan/scripts/*.py   Python implementation
+  ~/Projects/bpc-war-plan/exports/       Odoo snapshots + session log
+  macOS Keychain                         Odoo password (per machine)
+EOF
+    ;;
+
+  *)
+    echo "Unknown command: $1"
+    echo "Run: session help"
+    exit 1
+    ;;
+esac
