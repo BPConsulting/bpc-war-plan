@@ -59,7 +59,7 @@ Use `-i` instead of `--update` for first-time installs.
 clear
 cd /var/odoo/intrix && sudo -u odoo venv/bin/python3 src/odoo-bin \
   -c odoo.conf --no-http --stop-after-init \
-  -d intrix-production \
+  -d intrix \
   --update <module_name>
 ```
 
@@ -93,6 +93,7 @@ cd /var/odoo/intrix && sudo -u odoo venv/bin/python3 src/odoo-bin \
 - EPF/SOCSO/EIS use `_rule_parameter()` method
 - PCB uses cumulative bracket method with `wage_minimum - 1` as floor
 - PCB rounds UP to nearest 5 cents: `math.ceil(x * 20) / 20`
+- **NEVER use `rules['CODE']` in salary rule Python** — returns `DefaultDictPayroll` default dict `{total:0, amount:0, quantity:0}`, NOT computed values. Always call helper functions (e.g. `payslip.bpc_epf_ee(categories)`) directly.
 - RM 400 rebate applies when chargeable income ≤ RM 35,000
 
 ---

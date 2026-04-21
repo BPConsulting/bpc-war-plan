@@ -149,6 +149,15 @@ value = rec.val_char  # or val_integer, val_float
 - Key codes: `PERSONAL_RELIEF` (9000), `EPF_PCB_ANNUAL_CAP` (4000), `PCB_REBATE_THRESHOLD` (35000), `PCB_REBATE_AMOUNT` (400)
 - PCB_EXTRA: **pending** — implement as separate salary rule so it doesn't corrupt YTD
 
+### Payslip report files (added 21 Apr 2026)
+| File | Purpose |
+|------|---------|
+| `report/payslip_report.xml` | Report action + default Print override |
+| `report/payslip_template.xml` | QWeb template — PATTYN-style, orange+black |
+
+Default Print button (hr_payroll.action_report_payslip) redirected to INTRIX template.
+Light payslip variant (hr_payroll.action_report_light_payslip) unbound from model.
+
 ---
 
 ## ITO dealer model

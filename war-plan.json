@@ -1,53 +1,382 @@
 {
   "project": "INTRIX War Plan",
-  "last_updated": "2026-04-17",
+  "last_updated": "2026-04-21",
   "tasks": [
-    {"id": 1,  "task": "INTRIX data cleanup + employee data import to production",         "client": "ITO+ITR", "type": "config",  "deadline": "13/4", "status": "Done"},
-    {"id": 2,  "task": "Run copy_prod_to_staging.py once production data is clean",        "client": "ITO+ITR", "type": "config",  "deadline": "13/4", "status": "Done"},
-    {"id": 3,  "task": "First test payslip Jan 2026 — validate vs Excel + LHDN",          "client": "ITO+ITR", "type": "dev",     "deadline": "13/4", "status": "Pending"},
-    {"id": 4,  "task": "ESS onboarding plan — batches (~20/day), criteria, order",         "client": "ITO+ITR", "type": "admin",   "deadline": "13/4", "status": "Done"},
-    {"id": 5,  "task": "Townhall talking points + ESS demo flow outline",                  "client": "ITO+ITR", "type": "content", "deadline": "13/4", "status": "Done"},
-    {"id": 6,  "task": "AVP dual CRM/Sales — design decision (own vs managed-on-behalf)",  "client": "AVP",     "type": "design",  "deadline": "14/4", "status": "Pending"},
-    {"id": 7,  "task": "ESS feature visibility controls — hide leave+payslips for launch", "client": "ITO+ITR", "type": "dev",     "deadline": "14/4", "status": "Pending"},
-    {"id": 8,  "task": "Dealer portal desktop redesign",                                   "client": "ITO",     "type": "dev",     "deadline": "14/4", "status": "Pending"},
-    {"id": 9,  "task": "Dealer new-agreement button bug — fix",                            "client": "ITO",     "type": "bug",     "deadline": "14/4", "status": "Pending"},
-    {"id": 10, "task": "Townhall materials — slides, ESS walkthrough, demo flow",          "client": "ITO+ITR", "type": "content", "deadline": "15/4", "status": "Done"},
-    {"id": 11, "task": "TNC new employee onboarding checklist",                            "client": "ITO+ITR", "type": "content", "deadline": "15/4", "status": "Pending"},
-    {"id": 12, "task": "TNC resigned employee offboarding checklist",                      "client": "ITO+ITR", "type": "content", "deadline": "15/4", "status": "Pending"},
-    {"id": 13, "task": "ESS: attendance + WIO only visible at launch",                     "client": "ITO+ITR", "type": "config",  "deadline": "15/4", "status": "Pending"},
-    {"id": 14, "task": "boolean_toggle fix — sweep all views",                             "client": "ITO+ITR", "type": "dev",     "deadline": "15/4", "status": "Pending"},
-    {"id": 15, "task": "AVP logbook Phase 1 — avp.logbook model",                         "client": "AVP",     "type": "dev",     "deadline": "15/4", "status": "Pending"},
-    {"id": 16, "task": "SO deposit separation — implement based on finance decision",      "client": "ITO",     "type": "dev",     "deadline": "16/4", "status": "Pending"},
-    {"id": 17, "task": "Dealer portal RRP + commission breakdown",                         "client": "ITO",     "type": "dev",     "deadline": "16/4", "status": "Pending"},
-    {"id": 18, "task": "Dealer configurable date parameters (via Setup Variable)",         "client": "ITO",     "type": "dev",     "deadline": "16/4", "status": "Pending"},
-    {"id": 19, "task": "Helpdesk queues setup",                                            "client": "ITO+ITR", "type": "config",  "deadline": "16/4", "status": "Pending"},
-    {"id": 20, "task": "AVP dual CRM build — implement agreed design",                     "client": "AVP",     "type": "dev",     "deadline": "16/4", "status": "Pending"},
-    {"id": 21, "task": "ESS portal stable + fully tested before townhall",                 "client": "ITO+ITR", "type": "config",  "deadline": "17/4", "status": "Done"},
-    {"id": 22, "task": "Employee data certification — first login → TNC validation",       "client": "ITO+ITR", "type": "dev",     "deadline": "17/4", "status": "Done"},
-    {"id": 23, "task": "Per-employee comms preferences",                                   "client": "ITO+ITR", "type": "dev",     "deadline": "17/4", "status": "Pending"},
-    {"id": 24, "task": "Helpdesk — ESS ticket creation from portal",                       "client": "ITO+ITR", "type": "dev",     "deadline": "17/4", "status": "Pending"},
-    {"id": 25, "task": "Install and configure payroll on staging (ITO+ITR structures)",    "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 26, "task": "Payroll trial runs Jan/Feb/Mar 2026 — validate vs Excel + LHDN",  "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 27, "task": "Payslip print template design",                                    "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 28, "task": "GPS double clock-in entry glitch fix",                             "client": "ITO+ITR", "type": "bug",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 29, "task": "Auto clock-out hours subtraction fix",                             "client": "ITO+ITR", "type": "bug",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 30, "task": "Clock-in reminder cron 8:45am MYT",                               "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Done"},
-    {"id": 31, "task": "OT request flow — advance approval + orgchart + auto cash vs leave","client": "ITO+ITR","type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 32, "task": "Leave flow ESS",                                                   "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 33, "task": "TNC payroll + employee dump reports",                              "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 34, "task": "EPF/SOCSO/EIS/LHDN contribution file exports",                    "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 35, "task": "PBB payment file export",                                          "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 36, "task": "HubSpot data import",                                              "client": "ITO",     "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 37, "task": "Test import of Slack conversations",                               "client": "ITO",     "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 38, "task": "iPay88 integration",                                               "client": "ITO",     "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 39, "task": "Module renames (fix uppercase)",                                   "client": "BPC",     "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 40, "task": "Dealer flow reorganization (multi-company)",                       "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 41, "task": "AVP logbook Phase 2 — AI/BI layer",                               "client": "AVP",     "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 42, "task": "MSCCI ongoing development",                                        "client": "MSCCI",   "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 43, "task": "BPC own Odoo Git migration",                                       "client": "BPC",     "type": "admin",   "deadline": "4/5",  "status": "Pending"},
-    {"id": 44, "task": "Editable WhatsApp/email message templates",                        "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 45, "task": "Race seed data on production (CHI/MLY/IND/OTH)",                  "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 46, "task": "PCB_EXTRA as separate salary rule",                                "client": "ITO+ITR", "type": "dev",     "deadline": "4/5",  "status": "Pending"},
-    {"id": 47, "task": "bpc-war-plan repo setup — war-plan.json, RULES.md, MODULES.md",   "client": "BPC",     "type": "admin",   "deadline": "17/4", "status": "Done"}
+    {
+      "id": 1,
+      "task": "INTRIX data cleanup + employee data import to production",
+      "client": "ITO+ITR",
+      "type": "config",
+      "deadline": "13/4",
+      "status": "Done"
+    },
+    {
+      "id": 2,
+      "task": "Run copy_prod_to_staging.py once production data is clean",
+      "client": "ITO+ITR",
+      "type": "config",
+      "deadline": "13/4",
+      "status": "Done"
+    },
+    {
+      "id": 3,
+      "task": "First test payslip Jan 2026 \u2014 validate vs Excel + LHDN",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "13/4",
+      "status": "Done"
+    },
+    {
+      "id": 4,
+      "task": "ESS onboarding plan \u2014 batches (~20/day), criteria, order",
+      "client": "ITO+ITR",
+      "type": "admin",
+      "deadline": "13/4",
+      "status": "Done"
+    },
+    {
+      "id": 5,
+      "task": "Townhall talking points + ESS demo flow outline",
+      "client": "ITO+ITR",
+      "type": "content",
+      "deadline": "13/4",
+      "status": "Done"
+    },
+    {
+      "id": 6,
+      "task": "AVP dual CRM/Sales \u2014 design decision (own vs managed-on-behalf)",
+      "client": "AVP",
+      "type": "design",
+      "deadline": "14/4",
+      "status": "Pending"
+    },
+    {
+      "id": 7,
+      "task": "ESS feature visibility controls \u2014 hide leave+payslips for launch",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "14/4",
+      "status": "Pending"
+    },
+    {
+      "id": 8,
+      "task": "Dealer portal desktop redesign",
+      "client": "ITO",
+      "type": "dev",
+      "deadline": "14/4",
+      "status": "Pending"
+    },
+    {
+      "id": 9,
+      "task": "Dealer new-agreement button bug \u2014 fix",
+      "client": "ITO",
+      "type": "bug",
+      "deadline": "14/4",
+      "status": "Pending"
+    },
+    {
+      "id": 10,
+      "task": "Townhall materials \u2014 slides, ESS walkthrough, demo flow",
+      "client": "ITO+ITR",
+      "type": "content",
+      "deadline": "15/4",
+      "status": "Done"
+    },
+    {
+      "id": 11,
+      "task": "TNC new employee onboarding checklist",
+      "client": "ITO+ITR",
+      "type": "content",
+      "deadline": "15/4",
+      "status": "Pending"
+    },
+    {
+      "id": 12,
+      "task": "TNC resigned employee offboarding checklist",
+      "client": "ITO+ITR",
+      "type": "content",
+      "deadline": "15/4",
+      "status": "Pending"
+    },
+    {
+      "id": 13,
+      "task": "ESS: attendance + WIO only visible at launch",
+      "client": "ITO+ITR",
+      "type": "config",
+      "deadline": "15/4",
+      "status": "Pending"
+    },
+    {
+      "id": 14,
+      "task": "boolean_toggle fix \u2014 sweep all views",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "15/4",
+      "status": "Pending"
+    },
+    {
+      "id": 15,
+      "task": "AVP logbook Phase 1 \u2014 avp.logbook model",
+      "client": "AVP",
+      "type": "dev",
+      "deadline": "15/4",
+      "status": "Pending"
+    },
+    {
+      "id": 16,
+      "task": "SO deposit separation \u2014 implement based on finance decision",
+      "client": "ITO",
+      "type": "dev",
+      "deadline": "16/4",
+      "status": "Pending"
+    },
+    {
+      "id": 17,
+      "task": "Dealer portal RRP + commission breakdown",
+      "client": "ITO",
+      "type": "dev",
+      "deadline": "16/4",
+      "status": "Pending"
+    },
+    {
+      "id": 18,
+      "task": "Dealer configurable date parameters (via Setup Variable)",
+      "client": "ITO",
+      "type": "dev",
+      "deadline": "16/4",
+      "status": "Pending"
+    },
+    {
+      "id": 19,
+      "task": "Helpdesk queues setup",
+      "client": "ITO+ITR",
+      "type": "config",
+      "deadline": "16/4",
+      "status": "Pending"
+    },
+    {
+      "id": 20,
+      "task": "AVP dual CRM build \u2014 implement agreed design",
+      "client": "AVP",
+      "type": "dev",
+      "deadline": "16/4",
+      "status": "Pending"
+    },
+    {
+      "id": 21,
+      "task": "ESS portal stable + fully tested before townhall",
+      "client": "ITO+ITR",
+      "type": "config",
+      "deadline": "17/4",
+      "status": "Done"
+    },
+    {
+      "id": 22,
+      "task": "Employee data certification \u2014 first login \u2192 TNC validation",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "17/4",
+      "status": "Done"
+    },
+    {
+      "id": 23,
+      "task": "Per-employee comms preferences",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "17/4",
+      "status": "Pending"
+    },
+    {
+      "id": 24,
+      "task": "Helpdesk \u2014 ESS ticket creation from portal",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "17/4",
+      "status": "Pending"
+    },
+    {
+      "id": 25,
+      "task": "Install and configure payroll on staging (ITO+ITR structures)",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Done"
+    },
+    {
+      "id": 26,
+      "task": "Payroll trial runs Jan/Feb/Mar 2026 \u2014 validate vs Excel + LHDN",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Done"
+    },
+    {
+      "id": 27,
+      "task": "Payslip print template design",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "In Progress"
+    },
+    {
+      "id": 28,
+      "task": "GPS double clock-in entry glitch fix",
+      "client": "ITO+ITR",
+      "type": "bug",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 29,
+      "task": "Auto clock-out hours subtraction fix",
+      "client": "ITO+ITR",
+      "type": "bug",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 30,
+      "task": "Clock-in reminder cron 8:45am MYT",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Done"
+    },
+    {
+      "id": 31,
+      "task": "OT request flow \u2014 advance approval + orgchart + auto cash vs leave",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 32,
+      "task": "Leave flow ESS",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 33,
+      "task": "TNC payroll + employee dump reports",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 34,
+      "task": "EPF/SOCSO/EIS/LHDN contribution file exports",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 35,
+      "task": "PBB payment file export",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 36,
+      "task": "HubSpot data import",
+      "client": "ITO",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 37,
+      "task": "Test import of Slack conversations",
+      "client": "ITO",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 38,
+      "task": "iPay88 integration",
+      "client": "ITO",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 39,
+      "task": "Module renames (fix uppercase)",
+      "client": "BPC",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 40,
+      "task": "Dealer flow reorganization (multi-company)",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 41,
+      "task": "AVP logbook Phase 2 \u2014 AI/BI layer",
+      "client": "AVP",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 42,
+      "task": "MSCCI ongoing development",
+      "client": "MSCCI",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 43,
+      "task": "BPC own Odoo Git migration",
+      "client": "BPC",
+      "type": "admin",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 44,
+      "task": "Editable WhatsApp/email message templates",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 45,
+      "task": "Race seed data on production (CHI/MLY/IND/OTH)",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 46,
+      "task": "PCB_EXTRA as separate salary rule",
+      "client": "ITO+ITR",
+      "type": "dev",
+      "deadline": "4/5",
+      "status": "Pending"
+    },
+    {
+      "id": 47,
+      "task": "bpc-war-plan repo setup \u2014 war-plan.json, RULES.md, MODULES.md",
+      "client": "BPC",
+      "type": "admin",
+      "deadline": "17/4",
+      "status": "Done"
+    }
   ]
 }
