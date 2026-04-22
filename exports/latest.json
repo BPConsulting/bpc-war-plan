@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-04-22T00:09:34+08:00",
+  "pulled_at": "2026-04-22T22:34:17+08:00",
   "machine": "FCS-StudioBerry",
   "uid": 2,
   "stage_map": {
@@ -9,7 +9,7 @@
     "Next Week": 4,
     "Later": 5
   },
-  "task_count": 50,
+  "task_count": 48,
   "tasks": [
     {
       "id": 427,
@@ -262,118 +262,6 @@
       "sequence": 10,
       "write_date": "2026-04-20 10:42:51",
       "create_date": "2026-04-20 06:45:38"
-    },
-    {
-      "id": 466,
-      "name": "INTRIX / Module renames (fix uppercase) \u2014 all 18 modules",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        4
-      ],
-      "personal_stage_type_id": [
-        4,
-        "Next Week"
-      ],
-      "tag_ids": [
-        27
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-05-02 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 14:20:12",
-      "create_date": "2026-04-20 06:45:39"
-    },
-    {
-      "id": 468,
-      "name": "INTRIX / HubSpot data import",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        4
-      ],
-      "personal_stage_type_id": [
-        4,
-        "Next Week"
-      ],
-      "tag_ids": [
-        27
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-05-04 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 14:20:27",
-      "create_date": "2026-04-20 06:45:39"
-    },
-    {
-      "id": 469,
-      "name": "INTRIX / Test import of Slack conversations",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        4
-      ],
-      "personal_stage_type_id": [
-        4,
-        "Next Week"
-      ],
-      "tag_ids": [
-        27
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-05-04 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 14:20:24",
-      "create_date": "2026-04-20 06:45:39"
-    },
-    {
-      "id": 470,
-      "name": "ITO / iPay88 integration",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        4
-      ],
-      "personal_stage_type_id": [
-        4,
-        "Next Week"
-      ],
-      "tag_ids": [
-        22
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-05-04 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 06:45:40",
-      "create_date": "2026-04-20 06:45:40"
     },
     {
       "id": 471,
@@ -684,73 +572,17 @@
       "create_date": "2026-04-20 10:43:48"
     },
     {
-      "id": 492,
-      "name": "Populate Exchange Rates 2025-01-01",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        1
-      ],
-      "personal_stage_type_id": [
-        1,
-        "Inbox"
-      ],
-      "tag_ids": [
-        21
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-21 01:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-21 01:57:59",
-      "create_date": "2026-04-21 01:57:41"
-    },
-    {
-      "id": 493,
-      "name": "Recipient Bank Account Number - Remove Mandatory",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        1
-      ],
-      "personal_stage_type_id": [
-        1,
-        "Inbox"
-      ],
-      "tag_ids": [
-        21
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-21 03:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-21 03:47:21",
-      "create_date": "2026-04-21 03:47:21"
-    },
-    {
       "id": 494,
       "name": "Bank Recon with PDF",
       "description": "<div data-oe-version=\"2.0\" data-last-history-steps=\"3502873470689159\">Pending Sample from Mr. Ignacio</div><div>Consider CSV File</div>",
       "project_id": false,
       "stage_id": false,
       "personal_stage_type_ids": [
-        1
+        4
       ],
       "personal_stage_type_id": [
-        1,
-        "Inbox"
+        4,
+        "Next Week"
       ],
       "tag_ids": [
         21
@@ -764,92 +596,36 @@
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-21 04:03:12",
+      "write_date": "2026-04-22 08:55:16",
       "create_date": "2026-04-21 03:49:38"
     },
     {
-      "id": 495,
-      "name": "Journal Entries Report",
-      "description": "<div data-oe-version=\"2.0\" data-last-history-steps=\",2484759521797521,913829715943125,1888472295357305,1009944627101083,668210827658503,1697898005924959,4004312847672435,506191523251216,3433418587136732,3443022350401580,287444947268561,1865188673687836,660932258965822,478466001785739,785838206764651,1468776679770139,1388545293712477,824130818472134,4299915040631762,4293167055582444,1121123232344586,3511848469127658,3753231099468272,2574010687869329,2543491336140431,2961725473645465,4448048447372744,3453145350560680,2806162869049796,472885435757363,1050922797782885,3910895074923843,993448306587209,3703161387945425\">Pending Sample from Mrs. Azmazian</div>",
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        1
-      ],
-      "personal_stage_type_id": [
-        1,
-        "Inbox"
-      ],
-      "tag_ids": [
-        21
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-04-24 04:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-21 04:02:43",
-      "create_date": "2026-04-21 04:02:43"
-    },
-    {
-      "id": 496,
-      "name": "Total Column in Reports",
-      "description": "<div data-oe-version=\"2.0\" data-last-history-steps=\"1881466555332418\">Balance / P&amp;L for Multiple Periods (not required when only one period shown)</div>",
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        1
-      ],
-      "personal_stage_type_id": [
-        1,
-        "Inbox"
-      ],
-      "tag_ids": [
-        21
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": false,
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-21 04:16:40",
-      "create_date": "2026-04-21 04:14:55"
-    },
-    {
-      "id": 497,
-      "name": "New CoA",
+      "id": 498,
+      "name": "Odoo 19 Server Maintenance",
       "description": false,
       "project_id": false,
       "stage_id": false,
       "personal_stage_type_ids": [
-        1
+        3
       ],
       "personal_stage_type_id": [
-        1,
-        "Inbox"
+        3,
+        "This Week"
       ],
       "tag_ids": [
-        21
+        23
       ],
-      "priority": "0",
+      "priority": "3",
       "state": "01_in_progress",
       "active": true,
-      "date_deadline": "2026-04-21 04:00:00",
+      "date_deadline": "2026-04-26 09:00:00",
       "date_end": false,
       "user_ids": [
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-21 04:26:15",
-      "create_date": "2026-04-21 04:26:15"
+      "write_date": "2026-04-22 09:38:46",
+      "create_date": "2026-04-22 09:38:24"
     },
     {
       "id": 450,
@@ -880,6 +656,34 @@
       "create_date": "2026-04-20 06:45:37"
     },
     {
+      "id": 495,
+      "name": "Journal Entries Report",
+      "description": "<div data-oe-version=\"2.0\" data-last-history-steps=\",2484759521797521,913829715943125,1888472295357305,1009944627101083,668210827658503,1697898005924959,4004312847672435,506191523251216,3433418587136732,3443022350401580,287444947268561,1865188673687836,660932258965822,478466001785739,785838206764651,1468776679770139,1388545293712477,824130818472134,4299915040631762,4293167055582444,1121123232344586,3511848469127658,3753231099468272,2574010687869329,2543491336140431,2961725473645465,4448048447372744,3453145350560680,2806162869049796,472885435757363,1050922797782885,3910895074923843,993448306587209,3703161387945425\">Pending Sample from Mrs. Azmazian</div>",
+      "project_id": false,
+      "stage_id": false,
+      "personal_stage_type_ids": [
+        4
+      ],
+      "personal_stage_type_id": [
+        4,
+        "Next Week"
+      ],
+      "tag_ids": [
+        21
+      ],
+      "priority": "0",
+      "state": "01_in_progress",
+      "active": true,
+      "date_deadline": "2026-04-24 04:00:00",
+      "date_end": false,
+      "user_ids": [
+        2
+      ],
+      "sequence": 11,
+      "write_date": "2026-04-22 08:55:16",
+      "create_date": "2026-04-21 04:02:43"
+    },
+    {
       "id": 446,
       "name": "INTRIX / boolean_toggle fix \u2014 sweep all views",
       "description": false,
@@ -906,6 +710,34 @@
       "sequence": 12,
       "write_date": "2026-04-20 14:18:15",
       "create_date": "2026-04-20 06:45:37"
+    },
+    {
+      "id": 496,
+      "name": "Total Column in Reports",
+      "description": "<div data-oe-version=\"2.0\" data-last-history-steps=\"1881466555332418\">Balance / P&amp;L for Multiple Periods (not required when only one period shown)</div>",
+      "project_id": false,
+      "stage_id": false,
+      "personal_stage_type_ids": [
+        4
+      ],
+      "personal_stage_type_id": [
+        4,
+        "Next Week"
+      ],
+      "tag_ids": [
+        21
+      ],
+      "priority": "0",
+      "state": "01_in_progress",
+      "active": true,
+      "date_deadline": false,
+      "date_end": false,
+      "user_ids": [
+        2
+      ],
+      "sequence": 12,
+      "write_date": "2026-04-22 08:55:16",
+      "create_date": "2026-04-21 04:14:55"
     },
     {
       "id": 445,
@@ -936,6 +768,34 @@
       "create_date": "2026-04-20 06:45:37"
     },
     {
+      "id": 466,
+      "name": "INTRIX / Module renames (fix uppercase) \u2014 all 18 modules",
+      "description": false,
+      "project_id": false,
+      "stage_id": false,
+      "personal_stage_type_ids": [
+        4
+      ],
+      "personal_stage_type_id": [
+        4,
+        "Next Week"
+      ],
+      "tag_ids": [
+        27
+      ],
+      "priority": "0",
+      "state": "01_in_progress",
+      "active": true,
+      "date_deadline": "2026-05-02 00:00:00",
+      "date_end": false,
+      "user_ids": [
+        2
+      ],
+      "sequence": 13,
+      "write_date": "2026-04-22 08:55:16",
+      "create_date": "2026-04-20 06:45:39"
+    },
+    {
       "id": 467,
       "name": "ITO / ITO Dealer flow reorganization (multi-company)",
       "description": false,
@@ -962,6 +822,34 @@
       "sequence": 14,
       "write_date": "2026-04-20 14:18:33",
       "create_date": "2026-04-20 06:45:39"
+    },
+    {
+      "id": 470,
+      "name": "ITO / iPay88 integration",
+      "description": false,
+      "project_id": false,
+      "stage_id": false,
+      "personal_stage_type_ids": [
+        4
+      ],
+      "personal_stage_type_id": [
+        4,
+        "Next Week"
+      ],
+      "tag_ids": [
+        22
+      ],
+      "priority": "0",
+      "state": "01_in_progress",
+      "active": true,
+      "date_deadline": "2026-05-04 00:00:00",
+      "date_end": false,
+      "user_ids": [
+        2
+      ],
+      "sequence": 14,
+      "write_date": "2026-04-22 08:55:16",
+      "create_date": "2026-04-20 06:45:40"
     },
     {
       "id": 444,
@@ -992,6 +880,34 @@
       "create_date": "2026-04-20 06:45:37"
     },
     {
+      "id": 469,
+      "name": "INTRIX / Test import of Slack conversations",
+      "description": false,
+      "project_id": false,
+      "stage_id": false,
+      "personal_stage_type_ids": [
+        4
+      ],
+      "personal_stage_type_id": [
+        4,
+        "Next Week"
+      ],
+      "tag_ids": [
+        27
+      ],
+      "priority": "0",
+      "state": "01_in_progress",
+      "active": true,
+      "date_deadline": "2026-05-04 00:00:00",
+      "date_end": false,
+      "user_ids": [
+        2
+      ],
+      "sequence": 15,
+      "write_date": "2026-04-22 08:55:16",
+      "create_date": "2026-04-20 06:45:39"
+    },
+    {
       "id": 448,
       "name": "TNC / TNC resigned-employee offboarding checklist",
       "description": false,
@@ -1018,6 +934,34 @@
       "sequence": 16,
       "write_date": "2026-04-20 14:18:43",
       "create_date": "2026-04-20 06:45:37"
+    },
+    {
+      "id": 468,
+      "name": "INTRIX / HubSpot data import",
+      "description": false,
+      "project_id": false,
+      "stage_id": false,
+      "personal_stage_type_ids": [
+        4
+      ],
+      "personal_stage_type_id": [
+        4,
+        "Next Week"
+      ],
+      "tag_ids": [
+        27
+      ],
+      "priority": "0",
+      "state": "01_in_progress",
+      "active": true,
+      "date_deadline": "2026-05-04 00:00:00",
+      "date_end": false,
+      "user_ids": [
+        2
+      ],
+      "sequence": 16,
+      "write_date": "2026-04-22 08:55:16",
+      "create_date": "2026-04-20 06:45:39"
     },
     {
       "id": 447,
