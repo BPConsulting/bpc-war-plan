@@ -234,3 +234,65 @@ Multiple same-tier packages allowed per dealer.
 | `_bpc_pcb_bracket_lookup()` | Table 1 M/R/B lookup by P and category — NEW |
 | `_bpc_tp1_sum_lp()` | TP1 accumulated deductions prior months — NEW |
 | `_bpc_tp1_lp1()` | TP1 deductions current month — NEW |
+
+## Additions — 23 Apr 2026
+
+### New module in bpc-intrix-modules
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| `bpc19_intrix_attendance_dashboards` | Real-time attendance dashboards — Now/Missing/Anomalies/Events/TV + Hub | Production |
+
+### Updated module notes
+
+**bpc19_intrix_attendance_portal** — additions:
+- Travel mode: `travel_mode`, `travel_country_id`, `travel_date_from`, `travel_date_to` on `hr.employee`
+- `_is_travel_active()` helper method
+- `/my/attendance/travel` POST route (activate/deactivate)
+- `cron_clockin_missing_report` — 10:00 MYT missing clock-in email
+- Double clock-in idempotency guard (30s window)
+- JS button lock on submit (spinner + disabled)
+
+**BPC19_INTRIX_Setup** — additions:
+- `send_email` now sets `email_from` explicitly from system params
+- `send_email` checks `mail.state` after send — traces show real SMTP outcome
+- `send_test_email(email_to)` convenience method
+
+**BPC19_INTRIX_Company** — additions:
+- `data/mail_config_data.xml` — seeds `mail.default.from`, `mail.catchall.domain`, `mail.catchall.alias`
+
+### New hr.employee fields
+
+| Field | Odoo field name | Type | Default |
+|-------|----------------|------|---------|
+| Travel Mode | `travel_mode` | Boolean | False |
+| Travel Country | `travel_country_id` | Many2one res.country | — |
+| Travel From | `travel_date_from` | Date | — |
+| Travel To | `travel_date_to` | Date | — |
+
+### New Setup Variables
+
+| Name | Default | Purpose |
+|------|---------|---------|
+| `clockin_missing_report_time` | `10:00` | When to send missing clock-in email (MYT) |
+
+### New Notification Codes
+
+| Code | Channel | Purpose |
+|------|---------|---------|
+| `CLOCKIN_MISSING_HR` | email | Mid-day missing clock-in report recipients |
+
+### Attendance dashboard routes
+
+| URL | Auth | Purpose |
+|-----|------|---------|
+| `/attendance` | public | Hub launcher page |
+| `/attendance/now` | public | Who's in now (WIO/OOO) |
+| `/attendance/missing` | public | Missing & late |
+| `/attendance/anomalies` | public | Long shifts, overnight, short shifts |
+| `/attendance/events` | public | Live clock event feed |
+| `/attendance/tv` | public | TV rotator |
+| `/attendance/now/data` | public (jsonrpc) | Data endpoint |
+| `/attendance/missing/data` | public (jsonrpc) | Data endpoint |
+| `/attendance/anomalies/data` | public (jsonrpc) | Data endpoint |
+| `/attendance/events/data` | public (jsonrpc) | Data endpoint |
