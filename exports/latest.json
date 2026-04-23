@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-04-22T22:43:03+08:00",
+  "pulled_at": "2026-04-23T21:36:26+08:00",
   "machine": "FCS-StudioBerry",
   "uid": 2,
   "stage_map": {
@@ -9,7 +9,7 @@
     "Next Week": 4,
     "Later": 5
   },
-  "task_count": 48,
+  "task_count": 49,
   "tasks": [
     {
       "id": 427,
@@ -626,6 +626,34 @@
       "sequence": 10,
       "write_date": "2026-04-22 09:38:46",
       "create_date": "2026-04-22 09:38:24"
+    },
+    {
+      "id": 499,
+      "name": "Attendance Reports",
+      "description": false,
+      "project_id": false,
+      "stage_id": false,
+      "personal_stage_type_ids": [
+        1
+      ],
+      "personal_stage_type_id": [
+        1,
+        "Inbox"
+      ],
+      "tag_ids": [
+        2
+      ],
+      "priority": "0",
+      "state": "01_in_progress",
+      "active": true,
+      "date_deadline": "2026-04-23 05:00:00",
+      "date_end": false,
+      "user_ids": [
+        2
+      ],
+      "sequence": 10,
+      "write_date": "2026-04-23 05:11:29",
+      "create_date": "2026-04-23 05:11:21"
     },
     {
       "id": 450,
