@@ -1,6 +1,6 @@
 {
-  "pulled_at": "2026-04-23T21:36:26+08:00",
-  "machine": "FCS-StudioBerry",
+  "pulled_at": "2026-04-24T19:18:50+08:00",
+  "machine": "FCS-MBBerry",
   "uid": 2,
   "stage_map": {
     "Inbox": 1,
@@ -9,7 +9,7 @@
     "Next Week": 4,
     "Later": 5
   },
-  "task_count": 49,
+  "task_count": 47,
   "tasks": [
     {
       "id": 427,
@@ -348,34 +348,6 @@
       "create_date": "2026-04-20 06:45:40"
     },
     {
-      "id": 475,
-      "name": "TNC / GPS ghost records (0-second attendances) prevention / auto-delete",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        5
-      ],
-      "personal_stage_type_id": [
-        5,
-        "Later"
-      ],
-      "tag_ids": [
-        2
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": false,
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 10,
-      "write_date": "2026-04-20 14:21:01",
-      "create_date": "2026-04-20 06:45:40"
-    },
-    {
       "id": 477,
       "name": "ITO+ITR / Discuss channels config",
       "description": false,
@@ -628,8 +600,8 @@
       "create_date": "2026-04-22 09:38:24"
     },
     {
-      "id": 499,
-      "name": "Attendance Reports",
+      "id": 500,
+      "name": "Generic Access to Production",
       "description": false,
       "project_id": false,
       "stage_id": false,
@@ -641,19 +613,19 @@
         "Inbox"
       ],
       "tag_ids": [
-        2
+        27
       ],
       "priority": "0",
       "state": "01_in_progress",
       "active": true,
-      "date_deadline": "2026-04-23 05:00:00",
+      "date_deadline": "2026-04-27 06:00:00",
       "date_end": false,
       "user_ids": [
         2
       ],
       "sequence": 10,
-      "write_date": "2026-04-23 05:11:29",
-      "create_date": "2026-04-23 05:11:21"
+      "write_date": "2026-04-24 06:50:04",
+      "create_date": "2026-04-24 06:45:04"
     },
     {
       "id": 450,
@@ -1241,34 +1213,6 @@
       ],
       "sequence": 28,
       "write_date": "2026-04-20 14:19:37",
-      "create_date": "2026-04-20 06:45:38"
-    },
-    {
-      "id": 456,
-      "name": "TNC / GPS double clock-in entry glitch fix",
-      "description": false,
-      "project_id": false,
-      "stage_id": false,
-      "personal_stage_type_ids": [
-        3
-      ],
-      "personal_stage_type_id": [
-        3,
-        "This Week"
-      ],
-      "tag_ids": [
-        2
-      ],
-      "priority": "0",
-      "state": "01_in_progress",
-      "active": true,
-      "date_deadline": "2026-05-04 00:00:00",
-      "date_end": false,
-      "user_ids": [
-        2
-      ],
-      "sequence": 30,
-      "write_date": "2026-04-20 14:19:41",
       "create_date": "2026-04-20 06:45:38"
     },
     {
